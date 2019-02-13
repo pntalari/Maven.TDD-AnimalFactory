@@ -40,7 +40,7 @@ public class CatTest {
 
     // TODO - Create tests for `setBirthDate(Date birthDate)`
     @Test
-    public void setDOB() {
+    public void setDOBTest() {
         //Given
         Date dateExp = new Date(3);
         Date dateAct = new Date();

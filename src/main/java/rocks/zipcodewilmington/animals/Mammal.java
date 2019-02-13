@@ -37,7 +37,6 @@ public abstract class Mammal implements Animal {
         this.birthDate = birthDate;
     }
 
-
     public Integer getNumberOfMealsEaten() {
         return eatenMeals.size();
     }
