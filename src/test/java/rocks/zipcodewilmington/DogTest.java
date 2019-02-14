@@ -104,7 +104,7 @@ public class DogTest {
         //Then
         Assert.assertTrue(bool);
     }
-    
+
     @Test
     public void setNameTest() {
         // Given (a name exists and a dog exists)
