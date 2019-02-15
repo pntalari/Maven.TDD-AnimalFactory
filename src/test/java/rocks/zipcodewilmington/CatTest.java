@@ -13,11 +13,11 @@ import java.util.Date;
  */
 public class CatTest {
 
-    Cat catObj = new Cat("Precious", new Date(3), 9);
+    Cat catObj = new Cat(null, null, 0);
 
     // TODO - Create tests for `void setName(String name)`
     @Test
-    public void setName() {
+    public void setNameTest() {
         //Given
         String expectedName = "Precious";
         //When
@@ -55,25 +55,15 @@ public class CatTest {
     @Test
     public void eatTest() {
         //Given
+        //Cat catObj = new Cat();
+        Food food = new Food(); 
         int expectedEaten = catObj.getNumberOfMealsEaten();
-        Food food = new Food();
         //When
         catObj.eat(food);
         int actualEaten = catObj.getNumberOfMealsEaten();
         //Then
         expectedEaten = expectedEaten + 1;
         Assert.assertEquals(expectedEaten, actualEaten);
-    }
-
-    // TODO - Create tests for `Integer getId()`
-    @Test
-    public void getId() {
-        //Given
-        int expectedInt = 9;
-        //When
-        int actualInt = catObj.getId();
-        //Then
-        Assert.assertEquals(expectedInt, actualInt);
     }
 
     // TODO - Create test to check Animal inheritance; google search `java instanceof keyword`

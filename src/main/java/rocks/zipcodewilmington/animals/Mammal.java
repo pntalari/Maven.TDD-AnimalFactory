@@ -25,6 +25,7 @@ public abstract class Mammal implements Animal {
         return name;
     }
 
+
     public void setName(String name) {
         this.name = name;
     }
