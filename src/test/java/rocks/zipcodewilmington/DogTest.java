@@ -13,7 +13,7 @@ import java.util.Date;
  */
 public class DogTest {
 
-    Dog dogObj = new Dog("Pummyman",new Date(),3);
+    Dog dogObj = new Dog(null,null,0);
 
     // TODO - Create tests for `new Dog(String name, Date birthDate, Integer id)`
     @Test
@@ -70,17 +70,6 @@ public class DogTest {
         givenEaten = givenEaten+1;
         int retrievedEaten = dogObj.getNumberOfMealsEaten();
         Assert.assertEquals(givenEaten,retrievedEaten);
-    }
-
-    // TODO - Create tests for `Integer getId()`
-    @Test
-    public void getIdTest(){
-        //Given
-        int givenId = 3;
-        //When
-        int retrievedId = dogObj.getId();
-        //Then
-        Assert.assertEquals(givenId,retrievedId);
     }
 
     // TODO - Create test to check Animal inheritance; google search `java instanceof keyword`

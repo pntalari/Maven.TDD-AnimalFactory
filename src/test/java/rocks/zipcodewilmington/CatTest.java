@@ -1,6 +1,7 @@
 package rocks.zipcodewilmington;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import rocks.zipcodewilmington.animals.Animal;
 import rocks.zipcodewilmington.animals.Cat;
@@ -12,8 +13,13 @@ import java.util.Date;
  * @author leon on 4/19/18.
  */
 public class CatTest {
+    private Cat catObj;
 
-    Cat catObj = new Cat(null, null, 0);
+    @Before
+    public void setup() {
+        catObj = new Cat(null, null, 0);
+    }
+
 
     // TODO - Create tests for `void setName(String name)`
     @Test
@@ -56,7 +62,7 @@ public class CatTest {
     public void eatTest() {
         //Given
         //Cat catObj = new Cat();
-        Food food = new Food(); 
+        Food food = new Food();
         int expectedEaten = catObj.getNumberOfMealsEaten();
         //When
         catObj.eat(food);

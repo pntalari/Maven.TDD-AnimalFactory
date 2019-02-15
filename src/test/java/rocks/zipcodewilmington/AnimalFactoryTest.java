@@ -19,7 +19,7 @@ public class AnimalFactoryTest {
         String givenName = "Sony";
         Date givenDate = date;
         //When
-        Dog dogObj = AnimalFactory.createDog("Sony",date);
+        Dog dogObj = AnimalFactory.createDog(givenName,givenDate);
         String retrievedName = dogObj.getName();
         Date retrieveDate = dogObj.getBirthDate();
         //Then
